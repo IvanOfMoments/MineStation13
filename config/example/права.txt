@@ -1,0 +1,71 @@
+/datum/job/hop
+	title = "Начальник аванпоста"
+	flag = JOB_HOP
+	department_flag = JOBCAT_SUPPORT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the captain"
+	department_head = list("Captain")
+	selection_color = "#ddddff"
+	req_admin_notify = 1
+	is_command = 1
+	minimal_player_age = 21
+	min_age_allowed = 30
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_COMMAND
+	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_FORENSICS_LOCKERS,
+			            ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_CHANGE_IDS, ACCESS_EVA, ACCESS_HEADS,
+			            ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
+			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
+			            ACCESS_THEATRE, ACCESS_CHAPEL_OFFICE, ACCESS_LIBRARY, ACCESS_RESEARCH, ACCESS_MINING, ACCESS_HEADS_VAULT, ACCESS_MINING_STATION,
+			            ACCESS_CLOWN, ACCESS_MIME, ACCESS_HOP, ACCESS_RC_ANNOUNCE, ACCESS_KEYCARD_AUTH, ACCESS_GATEWAY, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_FORENSICS_LOCKERS,
+			            ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_CHANGE_IDS, ACCESS_EVA, ACCESS_HEADS,
+			            ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
+			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
+			            ACCESS_THEATRE, ACCESS_CHAPEL_OFFICE, ACCESS_LIBRARY, ACCESS_RESEARCH, ACCESS_MINING, ACCESS_HEADS_VAULT, ACCESS_MINING_STATION,
+			            ACCESS_CLOWN, ACCESS_MIME, ACCESS_HOP, ACCESS_RC_ANNOUNCE, ACCESS_KEYCARD_AUTH, ACCESS_GATEWAY, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
+	outfit = /datum/outfit/job/hop
+
+/datum/outfit/job/hop
+	name = "Начальник аванпоста"
+	jobtype = /datum/job/hop
+	uniform = /obj/item/clothing/under/rank/head_of_personnel
+	shoes = /obj/item/clothing/shoes/brown
+	head = /obj/item/clothing/head/hopcap
+	glasses = /obj/item/clothing/glasses/hud/skills/sunglasses
+	l_ear = /obj/item/radio/headset/heads/hop
+	id = /obj/item/card/id/silver
+	l_pocket = /obj/item/lighter/zippo/hop
+	pda = /obj/item/pda/heads/hop
+	backpack_contents = list(
+		/obj/item/storage/box/ids = 1,
+		/obj/item/melee/classic_baton/telescopic = 1
+	)
+
+	implants = list()
+
+
+
+
+#if !defined(USING_MAP_DATUM)
+	#include "map_files\Delta\delta.dmm"
+	#include "map_files\cyberiad\z2.dmm"
+	#include "map_files\Delta\Lavaland.dmm"
+	#include "map_files\generic\syndicatebase.dmm"
+
+	#define MAP_FILE "delta.dmm"
+	#define MAP_NAME "Kerberos"
+	#define MAP_TRANSITION_CONFIG list(\
+DECLARE_LEVEL(MAIN_STATION, CROSSLINKED, list(STATION_LEVEL, STATION_CONTACT, REACHABLE, AI_OK)),\
+DECLARE_LEVEL(CENTCOMM, SELFLOOPING, list(ADMIN_LEVEL, BLOCK_TELEPORT, IMPEDES_MAGIC)),\
+DECLARE_LEVEL(MINING, SELFLOOPING, list(ORE_LEVEL, REACHABLE, STATION_CONTACT, HAS_WEATHER, AI_OK)),\
+DECLARE_LEVEL(RAMSS_TAIPAN, CROSSLINKED, list(REACHABLE, TAIPAN)))
+
+	#define USING_MAP_DATUM /datum/map/delta
+
+#elif !defined(MAP_OVERRIDE)
+
+	#warn a map has already been included, ignoring Delta.
+
+#endif
