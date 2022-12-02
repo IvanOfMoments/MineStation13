@@ -2,8 +2,8 @@
 	title = "Head of Security"
 	flag = JOB_HOS
 	department_flag = JOBCAT_ENGSEC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	is_security = 1
 	supervisors = "the captain"
 	department_head = list("Captain")
@@ -57,8 +57,8 @@
 	title = "Warden"
 	flag = JOB_WARDEN
 	department_flag = JOBCAT_ENGSEC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	is_security = 1
 	supervisors = "the head of security"
 	department_head = list("Head of Security")
@@ -103,8 +103,8 @@
 	title = "Detective"
 	flag = JOB_DETECTIVE
 	department_flag = JOBCAT_ENGSEC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	is_security = 1
 	supervisors = "the head of security"
 	department_head = list("Head of Security")
@@ -163,8 +163,8 @@
 	title = "Security Officer"
 	flag = JOB_OFFICER
 	department_flag = JOBCAT_ENGSEC
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 0
+	spawn_positions = 0
 	is_security = 1
 	supervisors = "the head of security"
 	department_head = list("Head of Security")
@@ -204,8 +204,8 @@
 	title = "Brig Physician"
 	flag = JOB_BRIGDOC
 	department_flag = JOBCAT_KARMA
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	is_security = 1
 	supervisors = "the head of security"
 	department_head = list("Head of Security")
@@ -238,8 +238,8 @@
 	title = "Security Pod Pilot"
 	flag = JOB_PILOT
 	department_flag = JOBCAT_KARMA
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	is_security = 1
 	supervisors = "the head of security"
 	department_head = list("Head of Security")

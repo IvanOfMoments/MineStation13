@@ -4,8 +4,8 @@
 	title = "Nanotrasen Navy Officer"
 	flag = JOB_CENTCOM
 	department_flag = JOB_CENTCOM // This gets its job as its own flag because admin jobs dont have flags
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the admins"
 	selection_color = "#ffdddd"
 	access = list()
@@ -65,8 +65,8 @@
 	title = "Special Operations Officer"
 	flag = JOB_CENTCOM
 	department_flag = JOB_CENTCOM // This gets its job as its own flag because admin jobs dont have flags
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the admins"
 	selection_color = "#ffdddd"
 	access = list()
