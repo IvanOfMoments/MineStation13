@@ -2,8 +2,8 @@
 	title = "Syndicate Officer"
 	flag = JOB_SYNDICATE
 	department_flag = JOB_SYNDICATE // This gets its job as its own flag because admin jobs dont have flags
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the admins"
 	selection_color = "#ff0000"
 	access = list()

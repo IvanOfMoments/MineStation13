@@ -3,8 +3,8 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	title = "Captain"
 	flag = JOB_CAPTAIN
 	department_flag = JOBCAT_ENGSEC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Nanotrasen officials"
 	department_head = list("Nanotrasen Navy Officer")
 	selection_color = "#ccccff"
@@ -103,8 +103,8 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	title = "Nanotrasen Representative"
 	flag = JOB_NANO
 	department_flag = JOBCAT_KARMA
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the command staff"
 	department_head = list("Captain")
 	selection_color = "#ddddff"
@@ -151,8 +151,8 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	title = "Blueshield"
 	flag = JOB_BLUESHIELD
 	department_flag = JOBCAT_KARMA
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Nanotrasen representative"
 	department_head = list("Captain")
 	selection_color = "#ddddff"
@@ -198,8 +198,8 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	title = "Magistrate"
 	flag = JOB_JUDGE
 	department_flag = JOBCAT_KARMA
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Nanotrasen Supreme Court"
 	department_head = list("Captain")
 	selection_color = "#ddddff"
@@ -247,8 +247,8 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	title = "Internal Affairs Agent"
 	flag = JOB_LAWYER
 	department_flag = JOBCAT_SUPPORT
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	is_legal = 1
 	supervisors = "the magistrate"
 	department_head = list("Captain")
