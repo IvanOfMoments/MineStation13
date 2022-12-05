@@ -51,8 +51,8 @@
 	title = "Station Engineer"
 	flag = JOB_ENGINEER
 	department_flag = JOBCAT_ENGSEC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	is_engineering = 1
 	supervisors = "the chief engineer"
 	department_head = list("Chief Engineer")

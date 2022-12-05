@@ -58,7 +58,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 
 
 /datum/job/hop
-	title = "Начальник аванпоста"
+	title = "Head of Personnel"
 	flag = JOB_HOP
 	department_flag = JOBCAT_SUPPORT
 	total_positions = 1
@@ -80,7 +80,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	return get_all_accesses()
 
 /datum/outfit/job/hop
-	name = "Начальник аванпоста"
+	name = "Head of Personnel"
 	jobtype = /datum/job/hop
 	uniform = /obj/item/clothing/under/rank/head_of_personnel
 	shoes = /obj/item/clothing/shoes/brown
