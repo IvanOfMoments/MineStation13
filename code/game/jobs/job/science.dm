@@ -53,8 +53,8 @@
 	title = "Scientist"
 	flag = JOB_SCIENTIST
 	department_flag = JOBCAT_MEDSCI
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	is_science = 1
 	supervisors = "the research director"
 	department_head = list("Research Director")
